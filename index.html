@@ -17,30 +17,16 @@
             <a class="navbar-brand" href="#">Food Hub</a>
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#" onclick="home()">Home</a></li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu
-              <span class="caret"></span></a>
-              <ul type="dropdown-menu" class="dropdown-menu">
-                <select id="dropdownmenu"placeholder="Search..." onclick="change_value()">
-                  <option selected="selected" value="-1">None</option>
-            
-                </select>
-             
-        
-                <!--
-                <li><a href="#">Page 1-1</a></li>
-                <li><a href="#">Page 1-2</a></li>
-                <li><a href="#">Page 1-3</a></li>
-                -->
-              </ul>
+              <a class="dropdown-toggle"  href="#"onclick="menu()">Menu</a>
             </li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="https://sanskarzulu.github.io/MyFoodBlog/">Follow us</a></li>
+            <li><a href="https://sanskarzulu.github.io/MyFoodBlog/">About Us</a></li>
           </ul>
         </div>
       </nav> 
-    <div id="Home">
+    <div id="Home" >
         <p1>
             Short Name: <span id="shortName"></span><br>
             Name: <span id="Name"></span><br>
@@ -51,12 +37,14 @@
             Large portion name: <span id="largePortionN"></span><br>
         </p1>
     </div>
-   
-    
+    <div id="Menu" style="display:none;">
+      <select id="dropdownmenu"placeholder="Search..." onclick="change_value()">
+        <option selected="selected" value="-1"onclick="resetting()">None</option>
 
-    <!--
-    <script src="jquery-3.5.1.min.js" defer></script>
-    -->
+      </select>
+
+    </div>
+  
     <script src="script.js" defer></script>
 </body>
 </html>
